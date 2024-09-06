@@ -1,1 +1,1 @@
-# shop_project
+# Shope Project (PET)
