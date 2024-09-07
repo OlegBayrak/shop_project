@@ -1,0 +1,1 @@
+It's a good practice to use .env file for static configuration.
