@@ -1,5 +1,7 @@
 const router = require('./routes/index');
+
 require ('dotenv').config(); // to use the .env file
+
 const express = require('express'); // to create the server
 const sequelize = require('./db'); // to connect to the database
 const PORT = process.env.PORT || 8080;
