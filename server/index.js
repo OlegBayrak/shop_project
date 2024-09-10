@@ -1,3 +1,4 @@
+const router = require('./routes/index');
 require ('dotenv').config(); // to use the .env file
 const express = require('express'); // to create the server
 const sequelize = require('./db'); // to connect to the database
@@ -8,6 +9,7 @@ const cors = require ('cors');
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use('/api', router);
 
 app.get('/', (req,res) => {
     res.status(200).json({message: 'Get repsonse 200 - PASS'})
